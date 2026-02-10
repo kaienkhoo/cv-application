@@ -1,4 +1,6 @@
-.details-section {
+.details-section,
+.education-section,
+.job-section {
   display: flex;
   flex-direction: column;
   max-width: 400px;
@@ -44,4 +46,9 @@ button {
 
 button:hover {
   background-color: #0056b3;
+}
+
+.date-section {
+  display: flex;
+  gap: 10px;
 }
