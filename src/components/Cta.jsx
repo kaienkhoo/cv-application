@@ -1,9 +1,12 @@
-function Cta() {
+function Cta({ isEditing, setIsEditing }) {
     return (
         <section className="cta-section">
             <div className="cta">
-                <button type="submit">Submit</button>
-                <button type="button">Edit</button>
+                {isEditing ? (
+                    <button type="submit">Submit</button>
+                ) : (
+                    <button type="button" onClick={() => setIsEditing(true)}>Edit</button>
+                )}
             </div>
         </section>
     )
